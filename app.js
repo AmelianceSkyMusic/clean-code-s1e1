@@ -26,10 +26,10 @@ var createNewTaskElement=function(taskString){
     checkBox.classList.add("input")
     //label
     var label=document.createElement("label");//label
-    label.classList.add("label", "task")
+    label.classList.add("label", "task__label")
     //input (text)
     var editInput=document.createElement("input");//text
-    editInput.classList.add("input", "task")
+    editInput.classList.add("input", "task__input")
     //button.edit
     var editButton=document.createElement("button");//edit button
     editButton.classList.add("button", "edit")
