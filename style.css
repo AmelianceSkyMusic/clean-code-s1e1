@@ -50,7 +50,7 @@
 }
 
 .li,
-.h3 {
+.h2 {
   list-style: none;
 }
 
@@ -74,7 +74,7 @@
 }
 
 /* Heading */
-.h3,
+.h2,
 .label[for="new-task"] {
   color: #333;
   font-weight: 700;
