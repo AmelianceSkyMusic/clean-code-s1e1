@@ -24,48 +24,57 @@
       <seciton class="add-task">
         <label class="h2 add-task__title">Add Item</label>
         <div class="add-task__container">
-          <input id="new-task" class="input task__input" type="text">
+          <input id="new-task" class="input add-task__input" type="text">
           <button class="button add-task__button">Add</button>
         </div>
       </seciton>
 
-      <seciton class="todo">
-        <h2 class="h2 todo__title">Todo</h2>
-        <ul id="incomplete-tasks" class="ul todo__list">
-          <li class="li todo__item">
-            <input type="checkbox" class="checkbox input todo__checkbox">
-            <label class="label task__label">Pay Bills</label>
-            <input type="text" class="input task__input">
-            <button class="button edit">Edit</button>
-            <button class="button delete">
-              <img class="img" src="./remove.svg">
+      <seciton class="todo-tasks">
+        <h2 class="h2 todo-tasks__title">Todo</h2>
+
+        <ul id="incomplete-tasks" class="ul todo-list">
+
+          <li class="li todo-item">
+            <input type="checkbox" class="checkbox input todo-item__checkbox">
+            <label class="label todo-item__label">Pay Bills</label>
+            <input type="text" class="input todo-item__input">
+            <button class="button todo-item__button-edit">Edit</button>
+            <button class="button todo-item__button-delete">
+              <img class="img todo-item__img" src="./remove.svg">
             </button>
           </li>
-          <li class="li edit-mode todo__item">
-            <input type="checkbox" class="checkbox input todo__checkbox">
-            <label class="label task__label">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="input task__input">
-            <button class="button edit">Save</button>
-            <button class="button delete">
-              <img class="img" src="./remove.svg">
+
+          <li class="li edit-mode todo-item">
+            <input type="checkbox" class="checkbox input todo-item__checkbox">
+            <label class="label todo-item__label">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="input todo-item__input">
+            <button class="button todo-item__button-edit">Save</button>
+            <button class="button todo-item__button-delete">
+              <img class="img todo-item__img" src="./remove.svg">
             </button>
           </li>
+
         </ul>
+
       </seciton>
 
       <seciton class="completed">
         <h2 class="h2 completed__title">Completed</h2>
-        <ul id="completed-tasks" class="ul todo__list">
-          <li class="li todo__item"">
-            <input type="checkbox" class="checkbox input todo__checkbox" checked>
-            <label class="label task__label">See the Doctor</label>
-            <input type="text" class="input task__input">
-            <button class="button edit">Edit</button>
-            <button class="button delete">
-              <img class="img" src="./remove.svg">
+
+        <ul id="completed-tasks" class="ul todo-list">
+
+          <li class="li todo-item">
+            <input type="checkbox" class="checkbox input todo-item__checkbox" checked>
+            <label class="label todo-item__label">See the Doctor</label>
+            <input type="text" class="input todo-item__input">
+            <button class="button todo-item__button-edit">Edit</button>
+            <button class="button todo-item__button-delete">
+              <img class="img todo-item__img" src="./remove.svg">
             </button>
           </li>
+
         </ul>
+
       </seciton>
     </main>
 
