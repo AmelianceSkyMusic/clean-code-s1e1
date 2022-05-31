@@ -23,20 +23,20 @@ var createNewTaskElement=function(taskString){
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
-    checkBox.classList.add("input")
+    checkBox.classList.add("todo-item__checkbox");
     //label
     var label=document.createElement("label");//label
-    label.classList.add("label", "task")
+    label.classList.add("label", "todo-item__label")
     //input (text)
     var editInput=document.createElement("input");//text
-    editInput.classList.add("input", "task")
+    editInput.classList.add("input", "todo-item__input")
     //button.edit
     var editButton=document.createElement("button");//edit button
-    editButton.classList.add("button", "edit")
+    editButton.classList.add("button", "todo-item__button-edit")
 
     //button.delete
     var deleteButton=document.createElement("button");//delete button
-    deleteButton.classList.add("button", "delete")
+    deleteButton.classList.add("button", "todo-item__button-delete")
 
     var deleteButtonImg=document.createElement("img");//delete button image
     deleteButtonImg.classList.add("img")
@@ -69,7 +69,7 @@ var addTask=function(){
     //Create a new list item with the text from the #new-task:
     if (!taskInput.value) return;
     var listItem=createNewTaskElement(taskInput.value);
-    listItem.classList.add('li')
+    listItem.classList.add('li', 'todo-item')
 
     //Append listItem to incompleteTaskHolder
     incompleteTaskHolder.appendChild(listItem);
@@ -90,7 +90,7 @@ var editTask=function(){
 
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
-    var editBtn=listItem.querySelector(".edit");
+    var editBtn=listItem.querySelector(".todo-item__button-edit");
     var containsClass=listItem.classList.contains("edit-mode");
     //If class of the parent is .editmode
     if(containsClass){
@@ -161,9 +161,9 @@ addButton.addEventListener("click",ajaxRequest);
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
-    var checkBox=taskListItem.querySelector("input[type=checkbox]");
-    var editButton=taskListItem.querySelector("button.edit");
-    var deleteButton=taskListItem.querySelector("button.delete");
+    var checkBox=taskListItem.querySelector(".todo-item__checkbox");
+    var editButton=taskListItem.querySelector(".todo-item__button-edit");
+    var deleteButton=taskListItem.querySelector(".todo-item__button-delete");
 
 
     //Bind editTask to edit button.
