@@ -117,7 +117,7 @@
 }
 
 /* Task list */
-.li {
+.todo-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -135,7 +135,7 @@
   margin: 0 10px;
 }
 
-.li > .label {
+.todo-item__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
